@@ -108,18 +108,7 @@ We train a **Random Forest Regressor** and a **Gradient Boosting Regressor** and
 ## 6. Repository Structure & Reproducibility
 
 ### Structure
-* `exploratory-data-analysis.ipynb`: The main Jupyter Notebook executing all phases of the project.
+* [`exploratory-data-analysis.ipynb`](exploratory-data-analysis.ipynb): The main Jupyter Notebook executing all phases of the project.
 * `data/`: Directory containing all raw, processed, and clean datasets.
   * `fire_features_clean.csv`: Clean, imputed tabular feature matrix ready for machine learning.
 * `img/`: Directory containing generated maps and EDA visualizations.
-
-### Reproducibility
-To regenerate the notebook skeleton and re-run all calculations end-to-end:
-1. Ensure dependencies are installed:
-   ```bash
-   pip install pandas numpy geopandas shapely requests scikit-learn matplotlib seaborn jupyter nbconvert
-   ```
-2. Re-run the notebook via command line:
-   ```bash
-   jupyter nbconvert --to notebook --execute --inplace exploratory-data-analysis.ipynb
-   ```
